@@ -8,7 +8,7 @@ processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base
 model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base").to(device)
 
 # Load and preprocess the image
-image_path = "Images/catPlayingWithABall.jpeg"  
+image_path = "Images/catPlayingWithABall.jpeg"#change this to your image path  
 image = Image.open(image_path)
 inputs = processor(images=image, return_tensors="pt").to(device)
 
